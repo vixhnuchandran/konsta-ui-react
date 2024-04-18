@@ -1,9 +1,5 @@
-import React from 'react'
-
 const BluetoothPanel = () => {
-  return (
-    <div>BluetoothPanel</div>
-  )
+  return <div>BluetoothPanel</div>
 }
 
 export default BluetoothPanel
