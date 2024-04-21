@@ -201,9 +201,7 @@ const MenuListComp: React.FC<MenuListCompProps> = ({
           <hr className=" border-t border-gray-100 mr-2" />
 
           <MenuListItem
-            title=
-                "Digital Wellbeing & parental controls"
-            
+            title="Digital Wellbeing & parental controls"
             onClick={() =>
               handleMenuItemClick("DigitalWellbeingParentalControls")
             }
