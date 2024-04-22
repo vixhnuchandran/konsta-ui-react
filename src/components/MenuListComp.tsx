@@ -252,9 +252,7 @@ const MenuListComp: React.FC<MenuListCompProps> = ({
                 </Link>
               }
             />
-            <div className="pl-4 text-xs ">
-              {React.createElement(PanelComponents[openMenuItem])}
-            </div>
+            <div>{React.createElement(PanelComponents[openMenuItem])}</div>
           </Page>
         </Panel>
       )}
