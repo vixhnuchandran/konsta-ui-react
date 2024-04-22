@@ -5,8 +5,8 @@ const WiFiPanel = () => {
   const [wifiState, setWifiOn] = useState(false)
 
   return (
-    <div className="flex-col mt-3">
-      <h1 className="pl-2 font-light text-[34px]"> Wi-Fi</h1>
+    <div className="flex-col items-start mt-3 pl-2">
+      <h1 className="pl-4  font-light text-[34px]"> Wi-Fi</h1>
 
       <List>
         <ListItem
