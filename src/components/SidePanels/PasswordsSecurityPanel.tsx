@@ -27,10 +27,7 @@ const PasswordsSecurityPanel = () => {
 
         <div className="flex flex-col md:flex-row lg:flex-col">
           <Card>
-            <IoFingerPrintSharp
-              size={34}
-              className="text-purple-500 my-3 my-3"
-            />
+            <IoFingerPrintSharp size={34} className="text-purple-500 my-3" />
             <span className=" font-medium text-xl ">Fingerprint ..</span> <br />
             <span>off</span>
           </Card>
