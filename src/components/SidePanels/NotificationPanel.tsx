@@ -1,7 +1,7 @@
 import { CgHomeScreen } from "react-icons/cg"
 import { MdScreenLockPortrait } from "react-icons/md"
 
-import { Chip, Block, BlockTitle } from "konsta/react"
+import { Chip } from "konsta/react"
 function NotificationPanel() {
   return (
     <div className="flex-col mt-3 pl-2 ">
