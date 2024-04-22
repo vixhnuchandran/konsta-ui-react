@@ -2,7 +2,7 @@ import { CgHomeScreen } from "react-icons/cg"
 import { MdScreenLockPortrait } from "react-icons/md"
 import { HiMiniDevicePhoneMobile } from "react-icons/hi2"
 
-import { Chip } from "konsta/react"
+import { Chip, Preloader, List, ListItem } from "konsta/react"
 function NotificationPanel() {
   return (
     <div className="flex-col mt-3 pl-2 ">
@@ -23,6 +23,18 @@ function NotificationPanel() {
           <div className="h-32 w-32 flex flex-col items-center space-y-2">
             <CgHomeScreen size={104} />
             <Chip className="m-0.5 text-sky-600 bg-sky-400">Badges</Chip>
+          </div>
+        </div>
+      </div>
+      <List dividers={false}>
+        <ListItem label title="Notification shade" />
+        <hr className=" border-t border-gray-200 mt-4 mr-2" />
+      </List>
+
+      <div className="flex items-center justify-center h-full">
+        <div className="flex flex-col items-center">
+          <div className="font-light text-4xl mb-6">
+            <Preloader />
           </div>
         </div>
       </div>

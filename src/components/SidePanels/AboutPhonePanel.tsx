@@ -5,7 +5,7 @@ const AboutPhonePanel = () => {
   const [selected, setSelected] = useState("MIUIVersion")
   return (
     <div className="flex-col mt-3 pl-2">
-      <h1 className="pb-3 pl-4 font-light text-[34px]"> AboutPhone</h1>
+      <h1 className="pb-3 pl-2 font-light text-[34px]"> AboutPhone</h1>
 
       <div className="flex  h-full ">
         <div className="flex-1 h-full">
