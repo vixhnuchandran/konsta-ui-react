@@ -4,7 +4,7 @@ import { List, ListItem, Toggle, Range } from "konsta/react"
 function DisplayPanel() {
   const [checked1, setChecked1] = useState(false)
   const [volume1, setVolume1] = useState(50)
-  const [size, setSize] = useState(30)
+  const [size, setSize] = useState(40)
 
   return (
     <div className="flex-col mt-3 pl-2">
