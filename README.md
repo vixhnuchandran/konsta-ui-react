@@ -1,31 +1,69 @@
-# React + TypeScript + Vite
+![Konsta UI](https://konstaui.com/images/share-banner.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Konsta UI
 
-Currently, two official plugins are available:
+Konsta UI - Pixel perfect mobile UI components built with Tailwind CSS with iOS and Material Design components for React, Vue & Svelte
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sponsors
 
-## Expanding the ESLint configuration
+<!-- SPONSORS_TABLE_WRAP -->
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://www.noneedtostudy.com/take-my-online-class/" target="_blank">
+        <img src="https://konstaui.com/images/sponsors/noneedtostudy.png" alt="Pay someone to do online class? NoNeedToStudy.com" width="160">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://www.casinoutanlicens.io/" target="_blank">
+        <img src="https://konstaui.com/images/sponsors/casinoutanlicens.png" alt="Casino utan svensk licens" width="160">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://casinoscrypto.com" target="_blank">
+        <img src="https://konstaui.com/images/sponsors/casinoscrypto.png" alt="Best Crypto Casinos | Top Bitcoin Gambling Sites (2022)" width="160">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://cryptocurrencycodes.com" target="_blank">
+        <img src="https://konstaui.com/images/sponsors/cryptocurrencycodes.png" alt="Top FREE Crypto Sign Up Bonuses & Referral Codes" width="160">
+      </a>
+    </td>
+    <td align="center" valign="middle"></td>
+    <td align="center" valign="middle"></td>
+    <td align="center" valign="middle"></td>
+    <td align="center" valign="middle"></td>
+  </tr>
+</table>
+<!-- SPONSORS_TABLE_WRAP -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Documentation
 
-- Configure the top-level `parserOptions` property like this:
+Documentation available at https://konstaui.com
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Konsta UI Development
+
+First, install all dependencies:
+
+```
+$ npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# konsta-ui-react
+### Production Builds
+
+To build production versions the following npm scripts are available:
+
+- `build` - build production version
+
+Compiled results will be available in `package/` folder.
+
+## Kitchen Sink
+
+To run Kitchen Sink with development environment (development version will be built first) use the following npm scripts:
+
+- `react` - build development version of Konsta UI React package and run React Kitchen Sink
+
+## Contributing
+
+All changes should be committed to `src/` files only. Before you open an issue please review the [contributing guideline](https://github.com/konstaui/konsta/blob/master/CONTRIBUTING.md).
+# konsta-kitchensink
