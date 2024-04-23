@@ -24,8 +24,37 @@ export default function HomePage({ theme, setTheme, setColorTheme }) {
   };
 
   useLayoutEffect(() => {
-    setDarkMode(document.documentElement.classList.contains('dark'));
-  });
+    const darkModeMediaQuery = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    );
+
+    const updateDarkMode = (e) => {
+      setDarkMode(e.matches);
+      if (e.matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    };
+
+    const handleChange = (e) => {
+      if (e.matches) {
+        setDarkMode(true);
+        document.documentElement.classList.add('dark');
+      } else {
+        setDarkMode(false);
+        document.documentElement.classList.remove('dark');
+      }
+    };
+
+    updateDarkMode(darkModeMediaQuery);
+
+    darkModeMediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      darkModeMediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
   return (
     <Page>
