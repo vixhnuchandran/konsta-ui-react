@@ -18,7 +18,7 @@ export default function SecurityStatusPage() {
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
 
-      <div className="flex-col mt-3 pl-2">
+      <div className="flex-col">
         <div>
           <MenuList>
             <MenuListItem title="Find device" />

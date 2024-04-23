@@ -13,7 +13,7 @@ export default function SystemAppsUpdaterPage() {
         title="System apps updater"
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
-      <div className="flex-col mt-3 pl-2">
+      <div className="flex-col">
         <div className="flex flex-col items-center mt-20">
           <BsExclamationSquare size={34} className=" opacity-25" />
           <h3 className=" text-base">All system apps are up to date</h3>

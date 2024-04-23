@@ -17,7 +17,7 @@ export default function AboutPhonePage() {
         title="About phone"
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
-      <div className="flex-col mt-3 pl-2">
+      <div className="flex-col">
         <div className="flex  h-full ">
           <div className="flex-1 h-full">
             <Card>

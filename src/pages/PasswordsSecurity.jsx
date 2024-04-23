@@ -20,7 +20,7 @@ export default function PasswordsSecurityPage() {
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
 
-      <div className="flex-col mt-3 pl-2">
+      <div className="flex-col">
         <div className="grid grid-cols-2 gap-0  ">
           <div className="flex flex-col ">
             <div className="flex-1">

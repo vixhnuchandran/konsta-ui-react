@@ -24,7 +24,7 @@ export default function LockScreenPage() {
         title="Lock screen"
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
-      <div className="flex-col mt-3 pl-2">
+      <div className="flex-col">
         <List dividers={false}>
           <ListItem label title="Sleep" />
           <ListItem
