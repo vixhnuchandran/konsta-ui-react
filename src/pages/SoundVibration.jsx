@@ -36,7 +36,6 @@ export default function SoundVibrationPage() {
         left={<NavbarBackLink onClick={() => history.back()} />}
       />
       <div className="flex-col mt-3 pl-2">
-        <h1 className="pb-3 pl-2 font-light text-[34px]">Sound & vibration</h1>
         <div className="grid grid-cols-2 gap-0 md:grid-cols-1 md:gap-0 lg:grid-cols-2 lg:gap-0">
           <div className="flex flex-col md:flex-row lg:flex-col">
             <div className="flex-1">

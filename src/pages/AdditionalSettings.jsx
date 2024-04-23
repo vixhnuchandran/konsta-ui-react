@@ -14,14 +14,12 @@ export default function AdditionalSettingsPage() {
         large={size === 'Large'}
         transparent={isTransparent}
         left={<NavbarBackLink onClick={() => history.back()} />}
-      />{' '}
+      />
       <div className="flex-col items-start mt-3 pl-2">
-        <h1 className="pl-2  font-light text-[34px]">Additional settings</h1>
         <List dividers={false}>
           <ListItem label title="Date & time" />
           <ListItem label title="Language $ input" />
           <ListItem label title="Region" />
-
 
           <ListItem label title="Full screen display" />
           <ListItem label title="Button shortcuts" />
@@ -29,7 +27,6 @@ export default function AdditionalSettingsPage() {
           <ListItem label title="Quick ball" />
           <ListItem label title="One-handed mode" />
           <ListItem label title="Accessibility" />
-
 
           <ListItem label title="Enterprise mode" />
           <ListItem label title="Developer options" />
