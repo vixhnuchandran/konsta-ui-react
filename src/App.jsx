@@ -6,7 +6,20 @@ import routes from './routes.js';
 import HomePage from './pages/Home.jsx';
 
 function App() {
-  const [theme, setTheme] = useState('ios');
+  const [theme, setTheme] = useState('');
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      setTheme('material');
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      setTheme('ios');
+    } else {
+      setTheme('material');
+    }
+  }, []);
+
   const [currentColorTheme, setCurrentColorTheme] = useState('');
   const setColorTheme = (color) => {
     const htmlEl = document.documentElement;
@@ -16,14 +29,9 @@ function App() {
     if (color) htmlEl.classList.add(color);
     setCurrentColorTheme(color);
   };
-  useEffect(() => {
-    window.setTheme = (t) => setTheme(t);
-    window.setMode = (mode) => {
-      if (mode === 'dark') document.documentElement.classList.add('dark');
-      else document.documentElement.classList.remove('dark');
-    };
-  }, []);
+
   const inIFrame = window.parent !== window;
+
   useLayoutEffect(() => {
     if (window.location.href.includes('safe-areas')) {
       const html = document.documentElement;
@@ -36,6 +44,9 @@ function App() {
       }
     }
   }, [theme]);
+
+  if (!theme) return null;
+
   return (
     <KonstaApp theme={theme} safeAreas={!inIFrame}>
       <Router>
@@ -52,7 +63,6 @@ function App() {
             element={
               <HomePage
                 theme={theme}
-                setTheme={setTheme}
                 colorTheme={currentColorTheme}
                 setColorTheme={setColorTheme}
               />
